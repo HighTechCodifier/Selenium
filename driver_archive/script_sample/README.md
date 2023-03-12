@@ -1,3 +1,4 @@
 # Selenium
 
-This repository contains Selenium files
+This repository contains Selenium script samples files.
+
