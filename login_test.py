@@ -6,7 +6,7 @@ Description:
 import unittest
 from time import sleep
 
-from packaging import version
+# from packaging import version
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
