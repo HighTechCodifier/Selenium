@@ -4,7 +4,6 @@ Description:
 """
 
 import unittest
-import packaging
 from time import sleep
 
 from selenium import webdriver
