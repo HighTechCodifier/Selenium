@@ -10,10 +10,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
-from driver_archive.project_one.page_URL import url
-from driver_archive.project_one.page.main_page import MainPage
-from driver_archive.project_one.page.login_page import LoginPage
-from driver_archive.project_one.page.maintenance_login_page import MaintenanceLoginPage
+from driver_archive.project_two.page_URL import url
+from driver_archive.project_two.page.main_page import MainPage
+from driver_archive.project_two.page.login_page import LoginPage
+from driver_archive.project_two.page.maintenance_login_page import MaintenanceLoginPage
+from driver_archive.project_two.locator import dashboard_TAG_NAME
 
 
 class LoginTest(unittest.TestCase):
@@ -183,10 +184,13 @@ class LoginTest(unittest.TestCase):
         # Create an object in the class MaintenanceLoginPage:
         maintenance_page_object = MaintenanceLoginPage(self.driver)
 
-        # Assert text (Administrator Access) on maintenance page:
+        # ASSERTION:
         actual_value = maintenance_page_object. \
             check_validity_of_maintenance_page()
+
         expected_value = 'Administrator Access'
+
+        # Assert text (Administrator Access) on maintenance page:
         assert actual_value == expected_value
 
         # Go back to previous page:
@@ -216,6 +220,7 @@ class LoginTest(unittest.TestCase):
         # Create an object in the class Login:
         login_page_object = LoginPage(self.driver)
 
+        # ASSERTION:
         # Find the Login-text on login page:
         actual_value = login_page_object.check_validity_of_login_page()
 

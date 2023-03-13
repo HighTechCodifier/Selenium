@@ -170,13 +170,12 @@ class LoginTest(unittest.TestCase):
         # Create an object in the class MainPage:
         main_page_object = MainPage(self.driver)
 
-        actual_value = main_page_object.get_maintenance_text()
+        actual_value_1 = main_page_object.get_maintenance_text()
 
-        expected_value = 'Maintenance'
+        expected_value_1 = 'Maintenance'
 
         # Assert text (Maintenance) on main page:
-        assert actual_value == expected_value
-
+        assert actual_value_1 == expected_value_1
         # switch to maintenance-page:
         main_page_object.switch_to_maintenance_page()
 
@@ -187,6 +186,8 @@ class LoginTest(unittest.TestCase):
         actual_value = maintenance_page_object. \
             check_validity_of_maintenance_page()
         expected_value = 'Administrator Access'
+
+        # assert actual_value_1 == expected_value_1
         assert actual_value == expected_value
 
         # Go back to previous page:
