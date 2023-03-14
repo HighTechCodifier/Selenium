@@ -7,8 +7,8 @@ import unittest
 from time import sleep
 
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.chrome.service import Service as ChromeService
+# from webdriver_manager.chrome import ChromeDriverManager
 
 from driver_archive.project_two.page_URL import url
 from driver_archive.project_two.page.main_page import MainPage
@@ -39,9 +39,11 @@ class LoginTest(unittest.TestCase):
             none
         """
 
-        # Pass an instance of the Service class to the Chrome class:
-        cls.driver = webdriver.Chrome(service=ChromeService(
-            ChromeDriverManager().install()))
+        # # Pass an instance of the Service class to the Chrome class:
+        # cls.driver = webdriver.Chrome(service=ChromeService(
+        #     ChromeDriverManager().install()))
+
+        cls.driver = webdriver.Chrome(executable_path=r"C:\Users\User\Desktop\chromedriver")
 
         """
         Tell the webdriver to Wait maximum a certain
