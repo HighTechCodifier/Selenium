@@ -1,5 +1,3 @@
-from driver_archive.project_two.locator import *
-
 
 class MaintenanceLoginPage:
     """

@@ -1,4 +1,4 @@
-from driver_archive.project_two.locator import *
+from locator import *
 from time import sleep
 
 class MainPage:

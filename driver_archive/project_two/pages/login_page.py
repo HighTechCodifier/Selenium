@@ -1,7 +1,7 @@
 
-from driver_archive.project_two.locator import *
-from driver_archive.project_two import valid_credentials
-from driver_archive.project_two import invalid_credentials
+from locator import *
+from valid_credentials import *
+from invalid_credentials import *
 
 
 class LoginPage:
@@ -171,8 +171,8 @@ class LoginPage:
         """
 
         # Login to the page using credentials:
-        self.enter_username(valid_credentials.username)
-        self.enter_password(valid_credentials.password)
+        self.enter_username(username)
+        self.enter_password(password)
         self.click_on_login_button()
 
     ###########################################################################
@@ -187,6 +187,6 @@ class LoginPage:
         """
 
         # Login to the page using credentials:
-        self.enter_username(invalid_credentials.invalid_username)
-        self.enter_password(invalid_credentials.invalid_password)
+        self.enter_username(invalid_username)
+        self.enter_password(invalid_password)
         self.click_on_login_button()

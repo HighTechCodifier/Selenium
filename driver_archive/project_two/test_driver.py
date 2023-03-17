@@ -10,11 +10,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
-from driver_archive.project_two.page_URL import url
-from driver_archive.project_two.page.main_page import MainPage
-from driver_archive.project_two.page.login_page import LoginPage
-from driver_archive.project_two.page.maintenance_login_page import MaintenanceLoginPage
-from driver_archive.project_two.locator import dashboard_TAG_NAME
+from page_URL import url
+from page.main_page import MainPage
+from page.login_page import LoginPage
+from page.maintenance_login_page import MaintenanceLoginPage
+# from driver_archive.project_two.locator import dashboard_TAG_NAME
 
 
 class LoginTest(unittest.TestCase):
