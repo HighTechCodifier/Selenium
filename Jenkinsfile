@@ -21,7 +21,7 @@ pipeline {
                 // ------------------------
                 // Bytte ut "sh" mot "bat" eftersom min dator är en Windows. Detta behöver man inte göra om man använder Linux
                 // bat 'env\\Scripts\\python.exe --version'
-                bat 'env\\Scripts\\python.exe -m unittest test_driver'
+                bat 'env\\Scripts\\python.exe -m unittest login_test'
                 // echo "helloo"
                 // ------------------------
             }
