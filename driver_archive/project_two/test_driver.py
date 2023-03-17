@@ -11,9 +11,9 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 from page_URL import url
-from page.main_page import MainPage
-from page.login_page import LoginPage
-from page.maintenance_login_page import MaintenanceLoginPage
+from pages.main_page import MainPage
+from pages.login_page import LoginPage
+from pages.maintenance_login_page import MaintenanceLoginPage
 # from driver_archive.project_two.locator import dashboard_TAG_NAME
 
 
